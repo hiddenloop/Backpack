@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {sum} from '../';
+import {sum} from '../logic';
 const {describe, it} = global;
 
 describe('sum', () => {

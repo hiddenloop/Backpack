@@ -7,14 +7,11 @@
     "url": "git+https://github.com/BitSherpa/TypeFrame.git"
   },
   "license": "Apache-2.0",
-  "options": {
-    "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
-  },
   "scripts": {
     "prepublish": "npm run build",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
-    "testonly": "mocha $npm_package_options_mocha",
+    "testonly": "mocha --require scripts/mocha_runner src/**/__tests__/**/*.js",
     "test": "npm run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
     "build": "babel src --ignore __tests__ --out-dir ./dist"
@@ -39,6 +36,7 @@
   },
   "dependencies": {
     "babel-runtime": "6.x.x",
+    "bootstrap": "^4.0.0-alpha.2",
     "react": "0.14.x",
     "react-dom": "0.14.x"
   },
