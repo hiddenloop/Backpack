@@ -1,0 +1,63 @@
+{
+  "name": "type-frame",
+  "version": "1.0.0",
+  "description": "Open source TypeForm clone implemented in React and styled with Bootstrap 4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitSherpa/TypeFrame.git"
+  },
+  "license": "Apache-2.0",
+  "options": {
+    "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "lint": "eslint ./src",
+    "lintfix": "eslint ./src --fix",
+    "testonly": "mocha $npm_package_options_mocha",
+    "test": "npm run lint && npm run testonly",
+    "test-watch": "npm run testonly -- --watch --watch-extensions js",
+    "build": "babel src --ignore __tests__ --out-dir ./dist"
+  },
+  "devDependencies": {
+    "babel-cli": "6.x.x",
+    "babel-core": "6.x.x",
+    "babel-eslint": "4.x.x",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "6.x.x",
+    "babel-polyfill": "6.x.x",
+    "babel-preset-es2015": "6.x.x",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-2": "6.x.x",
+    "chai": "3.x.x",
+    "eslint": "1.7.x",
+    "eslint-plugin-babel": "2.x.x",
+    "mocha": "2.x.x",
+    "nodemon": "1.7.x",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-runtime": "6.x.x",
+    "react": "0.14.x",
+    "react-dom": "0.14.x"
+  },
+  "bugs": {
+    "url": "https://github.com/BitSherpa/TypeFrame/issues"
+  },
+  "homepage": "https://github.com/BitSherpa/TypeFrame#readme",
+  "main": "index.js",
+  "keywords": [
+    "typeform",
+    "clone",
+    "react",
+    "component",
+    "form",
+    "package",
+    "open",
+    "source",
+    "builder",
+    "surveys"
+  ],
+  "author": "Janik von Rotz"
+}
