@@ -1,10 +1,10 @@
 {
-  "name": "type-frame",
+  "name": "backpack",
   "version": "1.0.0",
   "description": "Open source TypeForm clone implemented in React and styled with Bootstrap 4",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BitSherpa/TypeFrame.git"
+    "url": "git+https://github.com/BitSherpa/Backpack.git"
   },
   "license": "Apache-2.0",
   "scripts": {
@@ -41,9 +41,9 @@
     "react-dom": "0.14.x"
   },
   "bugs": {
-    "url": "https://github.com/BitSherpa/TypeFrame/issues"
+    "url": "https://github.com/BitSherpa/Backpack/issues"
   },
-  "homepage": "https://github.com/BitSherpa/TypeFrame#readme",
+  "homepage": "https://github.com/BitSherpa/Backpack#readme",
   "main": "index.js",
   "keywords": [
     "typeform",
