@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default class Label extends React.Component {
+export default class Description extends React.Component {
   render() {
     return (
-      <label><h2>
+      <p>
         {this.props.children}
-      </h2></label>
+      </p>
     );
   }
 }

@@ -1,12 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import classNames from 'classnames/bind';
 
 export default class Input extends React.Component {
   render() {
     return (
       <input type={this.props.type}
-        className="form-control"
+        className={classNames('form-control', this.props.className)}
+        readOnly={this.props.readOnly}
         id={this.props.id}
+        value={this.props.value}
         required={this.props.required}
         placeholder={this.props.children} />
     );
