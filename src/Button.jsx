@@ -8,12 +8,14 @@ export default class Button extends React.Component {
       'btn-primary-outline': !this.props.className
     });
 
+    var keyboard = this.props.keyboard ? ("[ " + this.props.keyboard + " ] ") : ""
+
     return (
       <button className={classes}
       onClick={this.props.onClick}
       aria-pressed={this.props.ariaPressed}
       type={this.props.type || "button"}>
-        {this.props.children}
+        {keyboard + this.props.children}
       </button>
     );
   }

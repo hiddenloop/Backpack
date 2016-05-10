@@ -52,9 +52,9 @@ export default class MultipleChoice extends React.Component {
 
         return (
           <GridColumn className="col-sm-4">
-            <Button className={classes} ariaPressed={active}
+            <Button keyboard={child.props.keyboard} className={classes} ariaPressed={active}
             onClick={this.update.bind(this, value)}>
-              {"[ " + child.props.letter + " ] " + value}
+              {value}
             </Button>
           </GridColumn>
         );
@@ -64,6 +64,7 @@ export default class MultipleChoice extends React.Component {
         <GridColumn className="col-sm-8">
         {children}
         <Input required={this.props.required} value={this.state.values} className=""/>
+        { this.props.multiple ? (<Button keyboard="enter">OK</Button>) : "" }
         </GridColumn>
       </GridRow>
     );

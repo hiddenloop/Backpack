@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress",
-    "build": "babel src --out-dir ./dist"
+    "build": "babel src --out-dir ./dist",
+    "pack": "webpack"
   },
   "author": "Janik von Rotz",
   "license": "Apache-2.0",

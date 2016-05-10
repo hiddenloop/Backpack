@@ -19,7 +19,7 @@ export default class App extends React.Component {
         <FormGroup role="Start">
           <h1>Welcome</h1>
           <p>Hello text</p>
-          <Button>Start</Button>
+          <Button keyboard="enter">Start</Button>
         </FormGroup>
         <FormGroup>
           <Label>1. Mail</Label>
@@ -33,25 +33,25 @@ export default class App extends React.Component {
         <FormGroup>
           <Label>3. Choose multiple</Label>
           <MultipleChoice name="choose multiple" multiple="true">
-            <Option letter="a">Option 1</Option>
-            <Option letter="s">Option 2</Option>
-            <Option letter="d">Option 3</Option>
-            <Option letter="f">Option 4</Option>
+            <Option keyboard="a">Option 1</Option>
+            <Option keyboard="s">Option 2</Option>
+            <Option keyboard="d">Option 3</Option>
+            <Option keyboard="f">Option 4</Option>
           </MultipleChoice>
         </FormGroup>
         <FormGroup>
           <Label>4. Choose one</Label>
           <MultipleChoice name="choose one" required="true">
-            <Option letter="a">Option 1</Option>
-            <Option letter="s">Option 2</Option>
-            <Option letter="d">Option 3</Option>
-            <Option letter="f">Option 4</Option>
+            <Option keyboard="a">Option 1</Option>
+            <Option keyboard="s">Option 2</Option>
+            <Option keyboard="d">Option 3</Option>
+            <Option keyboard="f">Option 4</Option>
           </MultipleChoice>
         </FormGroup>
         <FormGroup role="End">
           <h1>End</h1>
           <p>World text</p>
-          <Button type="submit">Submit</Button>
+          <Button keyboard="enter" type="submit">Submit</Button>
         </FormGroup>
       </Form>
     );
