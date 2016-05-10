@@ -1,8 +1,9 @@
 {
-  "name": "backpack",
-  "version": "1.0.0",
+  "name": "bitsherpa-backpack",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "dev": "webpack-dev-server --progress",
     "build": "babel src --out-dir ./dist",
     "pack": "webpack"
@@ -15,7 +16,7 @@
     "classnames": "^2.2.5",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
-    "underscore": "^1.8.3"
+    "react-keydown": "^1.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.8.0",

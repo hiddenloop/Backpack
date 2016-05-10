@@ -1,0 +1,3 @@
+*.jsx
+.babelrc
+npm-debug.log
