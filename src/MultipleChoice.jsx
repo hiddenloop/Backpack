@@ -54,7 +54,7 @@ export default class MultipleChoice extends React.Component {
           <GridColumn className="col-sm-4">
             <Button className={classes} ariaPressed={active}
             onClick={this.update.bind(this, value)}>
-              {value}
+              {"[ " + child.props.letter + " ] " + value}
             </Button>
           </GridColumn>
         );

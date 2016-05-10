@@ -33,19 +33,19 @@ export default class App extends React.Component {
         <FormGroup>
           <Label>3. Choose multiple</Label>
           <MultipleChoice name="choose multiple" multiple="true">
-            <Option>Option 1</Option>
-            <Option>Option 2</Option>
-            <Option>Option 3</Option>
-            <Option>Option 4</Option>
+            <Option letter="a">Option 1</Option>
+            <Option letter="s">Option 2</Option>
+            <Option letter="d">Option 3</Option>
+            <Option letter="f">Option 4</Option>
           </MultipleChoice>
         </FormGroup>
         <FormGroup>
           <Label>4. Choose one</Label>
           <MultipleChoice name="choose one" required="true">
-            <Option>Option 1</Option>
-            <Option>Option 2</Option>
-            <Option>Option 3</Option>
-            <Option>Option 4</Option>
+            <Option letter="a">Option 1</Option>
+            <Option letter="s">Option 2</Option>
+            <Option letter="d">Option 3</Option>
+            <Option letter="f">Option 4</Option>
           </MultipleChoice>
         </FormGroup>
         <FormGroup role="End">
