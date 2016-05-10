@@ -45,7 +45,7 @@ export default class MultipleChoice extends React.Component {
 
         var value = child.props.children;
         var active = this.state.values.indexOf(value) > -1
-        const classes = classNames('options', 'btn-block', {
+        const classes = classNames('option', 'btn-block', {
           'btn-secondary-outline': active,
           'btn-primary-outline': !active
         });

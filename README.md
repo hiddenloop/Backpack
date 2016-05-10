@@ -13,3 +13,6 @@ http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visibl
 
 Blur out of focus
 http://codepen.io/paulobrien/pen/EjwdeG
+
+Add props to children
+http://jaketrent.com/post/send-props-to-children-react/

@@ -37,3 +37,9 @@ export function partsOfElementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
+
+export function goToAnchor(anchor) {
+  var loc = document.location.toString().split('#')[0];
+  document.location = loc + '#' + anchor;
+  return false;
+}

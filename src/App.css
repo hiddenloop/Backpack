@@ -1,10 +1,19 @@
 .form-group{
-  padding-bottom: 8em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
-form{
-  padding-top: 40%;
-  padding-bottom: 20%;
+.form{
+  padding-top: 12em;
+  padding-bottom: 24em;
+}
+
+.form .question{
+  opacity: .2;
+}
+
+.form .question.active{
+  opacity: 1;
 }
 
 .navbar{
@@ -13,4 +22,8 @@ form{
   left: 0;
   bottom: 0;
   z-index: 1030;
+}
+
+.multiple-choice .option {
+  margin: 1em;
 }
